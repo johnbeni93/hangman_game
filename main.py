@@ -33,7 +33,7 @@ for i in range(7):
 #game variables
 hangman_status = 0
 word = "ELEMENTARY"
-guessed = ["E", "L"]
+guessed = []
 
 
 #colors
@@ -91,5 +91,6 @@ while run:
                 dis = math.sqrt((x - m_x)**2 + (y - m_y)**2)
                 if dis < RADIUS:
                   letter[3] = False
+                  guessed.append(ltr)
 
 pygame.quit()
